@@ -50,13 +50,6 @@ void update_timers(ChipCPU *cpu) {
     if (cpu->delayTimer > 0) {
         cpu->delayTimer--;
     }
-
-    if (cpu->soundTimer > 0) {
-        if (cpu->soundTimer == 1) {
-            printf("BEEP!\n");  // TODO: Implement actual sound
-        }
-        cpu->soundTimer--;
-    }
 }
 
 /**
